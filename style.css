@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient ease 15s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  background-color: white;
+  width: 75%;
+  max-width: 1200px;
+  padding: 0 3rem;
+  text-align: left;
+  border-radius: 1rem;
+  box-shadow: 9px 9px 10px -4px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 9px 9px 10px -4px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 9px 9px 10px -4px rgba(0, 0, 0, 0.39);
+}
+h1 {
+  font-family: "Redressed", cursive;
+  font-size: 3rem;
+  background: -webkit-linear-gradient(
+    45deg,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1em 0;
+}
+
+p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+p::before {
+  content: "";
+  width: 2rem;
+  border-bottom: 2px solid black;
+}
+.buttons {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+}
+button {
+  font-size: 1.5rem;
+  padding: 0.5em;
+  background-color: white;
+  border: none;
+  margin-left: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+
+a {
+  color: black;
+}
+
+#tweet-quote a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 1em;
+  margin: -1em;
+}
+
+#tweet-quote a:hover {
+  color: white;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
